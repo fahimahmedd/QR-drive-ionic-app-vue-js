@@ -1,0 +1,7 @@
+{
+  "name": "QrDrive",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}

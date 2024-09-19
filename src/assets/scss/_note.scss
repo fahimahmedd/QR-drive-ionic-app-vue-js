@@ -1,0 +1,122 @@
+
+.note_create{
+    .create_header{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--primaryBorder);
+        padding: 0 12px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        .create_header_left{
+            font-size: 30px;
+            color: var(--primaryText);
+        }
+        .create_header_middle{
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--primaryText);
+            font-family: var(--Roboto);
+        }
+        .create_header_right{
+            font-size: 30px;
+            color: var(--primaryColor);
+        }
+    }
+}
+
+.note_createBody{
+    padding-top: 80px;
+    padding-bottom: 110px;
+    .create_body_top{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        .note_create_date{
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--primaryText);
+        }
+        .jornal_multimidia{
+            margin-left: 20px;
+            ion-icon{
+                font-size: 32px;
+                display: flex;
+                align-items: center;
+                color: var(--sacondaryColor);
+            }
+        }
+       }
+      .note_title{
+          input{
+              font-size: 20px;
+              font-weight: 600;
+              color: var(--primaryText);
+              font-family: var(--Roboto);
+              &::placeholder{
+                  font-size: 18px;
+              }
+          }
+      }
+  }
+
+
+.note_body{
+    h4{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--primaryText);
+    }
+
+    .note_list_wrapper{
+        display: flex;
+        justify-content: space-between;
+        .note_item{
+            background-color: #f3f8fe;
+            border-radius: 10px;
+            padding: 12px;
+            border: 1px solid #abc6e6;
+            height: 210px;
+            .note_date{
+                font-size: 13px;
+                font-weight: 400;
+                color: var(--primaryColor);
+            }
+            .note_item_head{
+                font-size: 17px;
+                font-weight: 700;
+                color: var(--primaryText);
+            }
+            .note_item_text{
+                padding-top: 10px;
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: start;
+                    line-height: 21px;
+                    color: var(--primaryText);
+                }
+            }
+        }
+    }
+}
+
+
+.note_create_text{
+    .label-text-wrapper{
+      display: none;
+    }
+    .form_control{
+        width: 100% !important;
+        min-height: 1200px;
+        height: auto;
+        outline: none;
+        border: none;
+        line-height: 23px;
+        font-size: 17px;
+    }
+}

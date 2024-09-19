@@ -1,0 +1,260 @@
+.authentication_header{
+    height: 60px;
+    border-bottom: 1px solid var(--primaryBorder);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    .back_btn{
+        display: flex;
+        align-items: center;
+        ion-icon{
+            font-size: 22px;
+            color: var(--primaryText);
+        }
+        span{
+            font-size: 15px;
+            color: var(--primaryText);
+        }
+    }
+}
+.register_header{
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    .back_btn{
+        display: flex;
+        align-items: center;
+        ion-icon{
+            font-size: 22px;
+            color: var(--whiteColor);
+        }
+        span{
+            font-size: 15px;
+            color: var(--whiteColor);
+        }
+    } 
+}
+
+.authentication_body{
+    padding: 60px 12px 12px 12px;
+    .passcode_icon{
+        height: 120px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to right top, #4270d4, #4d79da, #5882e0, #628be6, #6c94ec);
+        border-radius: 50%;
+        margin-top: 30px;
+        img{
+          height: 68px;
+          width: 68px;
+          object-fit: contain;
+        }
+    }
+    h4{
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--primaryText);
+        line-height: 20px;
+        padding-top: 15px;
+    }
+    h6{
+        font-size: 15px;
+        color: var(--primaryText);
+        font-weight: 400;
+        line-height: 22px;
+    }
+    .otp_text{
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--black);
+        span{
+            color: var(--primaryColor);
+            font-weight: 600;
+        }
+    }
+    .passcode_filed{
+        padding-top: 40px;
+    }
+}
+
+.submit_btn{
+    margin-top: 50px;
+}
+
+
+// OTP CSS
+.email_filed{
+    display: flex;
+    justify-content: center;
+}
+.email_filed .otp-input { 
+    width: 42px;
+    height: 42px;
+    padding: 5px;
+    margin: 0 3px;
+    font-size: 20px;
+    border-radius: 0px;
+    border: 1px solid #ffffff00;
+    text-align: center;
+    border-bottom: 1px solid rgb(99, 98, 98);
+    background-color: rgb(255, 255, 255);
+    &:focus-visible {
+        outline: none;
+       
+    }
+    
+  }
+  /* Background colour of an input field with value */
+  .otp-input.is-complete {
+    background-color: #ffffff;
+  }
+  .otp-input::-webkit-inner-spin-button,
+  .otp-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .otp-input::placeholder {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .emailCheck_body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #4675da, #517ee0, #5c87e6, #6790eb, #7199f1);
+     .emailCheck_content{
+       height: 310px;
+       width: 310px;
+       background-color: #fff;
+       border-radius: 12px;
+       box-shadow: var(--primaryShadow);
+       padding: 12px;
+       position: relative;
+       .check_icon{
+        height: 110px;
+        width: 110px;
+        background-color: #fff;
+        box-shadow: var(--primaryShadow);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -70px  auto 0;
+          ion-icon{
+              font-size: 55px;
+              color: var(--primaryText);
+          }
+       }
+       h4{
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--primaryText);
+        text-align: center;
+        line-height: 10px;
+       }
+       h6{
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--primaryColor);
+        text-align: center;
+        line-height: 10px;
+       }
+       .email_filed{
+        margin-top: 30px;
+       }
+       .email_submit{
+         position: absolute;
+         bottom: 20px;
+         left: 0;
+         padding: 0 20px;
+         width: 100%;
+       }
+     }
+  } 
+
+.register_top{
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(to right top, #4675da, #517ee0, #5c87e6, #6790eb, #7199f1);
+}
+
+.register_content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    padding: 20px;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: '';
+        background-color: rgba(255, 255, 255, 0.4);
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        height: 50%;
+        width: 100%;
+        top: -10px;
+        left: 0;
+        z-index: -1;
+    }
+
+    h4{
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primaryText);
+        text-align: center;
+        line-height: 10px;
+        span{
+            color: var(--primaryColor);
+        }
+    }
+    h6{
+        font-size: 15px;
+        color: var(--secondaryText);
+        text-align: center;
+    }
+
+    .register_body{
+        padding:  10px;
+
+        .register_input_item{
+            margin-top: 15px;
+        }
+        .register_Btn{
+            margin-top: 25px;
+        }
+    }
+}
+
+.vaultSet_wrapper{
+    height: 92% !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.button-block{
+    height: 45px;
+}

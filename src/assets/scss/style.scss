@@ -1,0 +1,25 @@
+/*<><><><><><><<><><><><><<><><><><>
+
+App Name     : iVault App
+Template URL : 
+Description  :
+Author       : Fahim Ahmed
+Author URL   :
+Version      : 1.0
+
+<><><><><><><<><><><><><<><><><><>*/
+
+
+@import "../scss/commonScss/common"; 
+@import "../scss/mixinScss/mixin"; 
+@import "../scss/variableScss/variable"; 
+@import "../scss/authenticationScss/splashScreen"; 
+@import "../scss/authenticationScss/scanner"; 
+@import "../scss/homeScss/homeContent"; 
+@import "../scss/homeScss/storage"; 
+@import "../scss/filesScss/files"; 
+@import "../scss/userScss/user";
+@import "../scss/homeScss/sidebar";
+@import "../scss/authenticationScss/authentication";
+@import "../scss/journal";
+@import "../scss/note";

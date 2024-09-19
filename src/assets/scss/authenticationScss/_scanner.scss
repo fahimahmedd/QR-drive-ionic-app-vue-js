@@ -1,0 +1,49 @@
+.scannerHome_wrapper{
+  height: 100vh;
+  position: relative;
+  .scannerHome_Bottom_Tab{
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: var(--sacondaryShadow);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    z-index: 2;
+    .tab_One{
+        ion-icon{
+            font-size: 28px; 
+            color: #7e8186de;           
+        }
+    }
+    .tab_Two{
+        ion-icon{
+            font-size: 28px; 
+            color: #7e8186de;           
+        }
+    }
+    .scan_btn{
+        height: 65px;
+        width: 65px;
+        background-color: #fff;
+        box-shadow: var(--sacondaryShadow);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -35px;
+        ion-icon{
+            font-size: 35px; 
+            color: #4776db;           
+        }  
+    }
+  }
+}
+
